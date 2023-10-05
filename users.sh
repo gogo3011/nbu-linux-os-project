@@ -38,6 +38,6 @@ case $menuChoice in
     *)  # just catch all invalid menu option
         echo "invalid input"
         ;;
-    
+# end switch case statement
 esac
 done
