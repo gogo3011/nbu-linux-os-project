@@ -42,3 +42,5 @@ case $menuChoice in
 # end switch case statement
 esac
 done
+
+exit 0
