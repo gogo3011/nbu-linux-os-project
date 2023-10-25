@@ -31,7 +31,7 @@ case $menuChoice in
         read userNameFilter
         # use awk with the users database by separating the cols by separator :
         # condition to output (is userIdFilter equal to the third col)
-        getent passwd | awk -v u="$userNameFilter" : 'index($1, u)'
+        getent passwd | awk -v u="$userNameFilter" -F ':' 'index($1, u)'
         ;;
     4)  echo "bye ;)"
         # exit from script
